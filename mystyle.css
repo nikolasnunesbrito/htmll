@@ -1,8 +1,41 @@
-html{
+html {
     background-color: gray;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     border: 5px;
+}
+
+#headerBatata {
+    background-color: rgb(208, 208, 208);
+    height: 100px;
+    width: 100%;
+    position: absolute;
+}
+.btnRed{  
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.btnGreen{  
+    width: 80px;
+    height: 30px;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    border-color: gray;
+}
+.txtBox{
+    width: 160px;
+    height: 30px;     
+    border-radius: 5px;
+    border-color: gray;
+    margin: 5px;
+
 }
