@@ -4,14 +4,6 @@ html{
 body{
     margin: 0;
     padding: 0;
-=======
-
-body{
-    margin: 0;
-    padding: 0;
-    border: 5px;
-    background-color: gray !important; 
->>>>>>> 7b15cc49e86d73263d9508d3e0a2e51e5fd7446d
 }
 .btns{
     height: 30px;
@@ -23,7 +15,6 @@ body{
 .label{
     margin-left: 40px;
 }
-<<<<<<< HEAD
 .btn-logar{
     margin-left: 40px;
     width: 400px;
