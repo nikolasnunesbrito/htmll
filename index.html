@@ -6,34 +6,31 @@
 </head>
 
 <body>
-  <div class="div-pai">
+  <div class="container">
     <div class="content">
-      <div id="div-title">
-        <H1 class="font-color-default">Login</h1>
-        <hr size="">
+      <div class="content-title ">
+        <H1 class="color-default txt-align-center">Login</h1>
+        <hr>
         </hr>
       </div>
-      <div style="width: 100%;">
-        <label class="font-color-default">E-mail:</label><br>
-        <input class="inputs" type="text" placeholder="contato@htmlecsspro.com">
-      </div>
-      <div style="width: 100%;">
-        <label class="font-color-default">Senha:</label><br>
-        <input class="inputs" type="password" placeholder="digite sua senha">
+      <div>
+        <label class="color-default">E-mail</label><br>
+        <input class="w-stretch" type="text" placeholder="nikas@nikas.com.br">
       </div>
       <div>
-        <input class="radio" type="checkbox">
-        <label class="font-color-default"> Manter-me logado</label>
+        <label class="color-default">Senha</label><br>
+        <input class="w-stretch" type="password" placeholder="digite sua senha">
       </div>
-      <input id="btnLogar" class="btn-logar" type="button" value="Logar">
-    </div>
-    <div style="width: 100%;">
-      <div class="div-bottom">
-        <a target="blank" href="https://www.google.com" class="label-cadastre-se font-color-default">Ainda não tem conta?</a>
-        <input class="btn-cadastre-se font-color-default" type="button" value="Cadastre-se">
+      <div>
+        <input type="checkbox" name="checkbox" id="cbMenterLogado">
+        <label class="color-default" for="cbMenterLogado">Manter-me logado</label>
       </div>
+      <input id="btnLogar" class="btn-default w-stretch" type="button" value="Logar">
     </div>
-
+    <div class="content-bottom">
+      <a target="blank" href="https://www.google.com" class="color-default h-margin-10 bold">Ainda não tem conta?</a>
+      <input id="btnCadastrar" class="btn-reverse bold" type="button" value="Cadastre-se">
+    </div>
   </div>
   <footer>
   </footer>
@@ -44,7 +41,7 @@
 <script>
   $(document).ready(function () {
     $("#btnLogar").click(function () {
-   
+
     });
   });
 

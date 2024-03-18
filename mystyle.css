@@ -7,82 +7,60 @@ body {
     padding: 0;
 }
 
-.inputs {
+input[type="text"],
+input[type="password"] {
     height: 30px;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 3px;
     padding-left: 10px;
     border: 2px solid silver;
     border-radius: 5px;
     box-shadow: 2px 2px #88888822;
 }
 
-.inputs:focus {
-    border: 2px solid  rgb(61, 157, 179);
-    outline: none ;
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 2px solid rgb(61, 157, 179);
+    outline: none;
 }
 
-.inputs::placeholder {
-   opacity:0.5;
+input::placeholder {
+    opacity: 0.5;
 }
 
-.btn-logar {
-    width: 100%;
-    height: 40px;
-    margin-top: 10px;
-    color: rgb(255, 253, 252);
-    background-color: rgb(61, 157, 179);
-    font-size: 20px;
-    border-radius: 5px;
-    border: solid rgb(61, 157, 179);
+input[type="checkbox"] {
+    box-shadow: 2px 2px #88888822;
+    background-color: silver;
 }
 
-.btn-cadastre-se {
-    border-radius: 5px;
+.btn-default {
     width: 100px;
     height: 30px;
-    border: 2px solid rgb(220, 227, 117);
-    font-weight: bolder;
-    margin-right: 20px;
+    color: rgb(255, 253, 252);
+    background-color: rgb(61, 157, 179);
+    border-radius: 5px;
+    border: 1px solid rgb(61, 157, 179);
 }
 
-.label-cadastre-se {
-    margin-right: 20px;
+.btn-reverse {
+    width: 100px;
+    height: 30px;
+    color: rgb(61, 157, 179);
+    background-color: rgb(255, 253, 252);
+    border-radius: 5px;
+    border: 1px solid rgb(61, 157, 179);
 }
 
-.div-bottom {
+#btnLogar {
+    height: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#btnCadastreSe {
+   margin-right: 20px;
+}
+
+.container {
     display: flex;
-    background-color: rgb(225, 234, 235);
-    width: 100%;
-    margin-top: 20px;
-    height: 62px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    align-items: center;
-    justify-content: end;
-}
-
-#div-title {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#div-title hr {
-    width: 100%;
-    background-color: rgb(191, 211, 213);
-    height: 2px;
-    border: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(61, 157, 179), rgba(255, 255, 255, 0));
-
-}
-
-#div-title h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
-.div-pai {
     background-color: rgb(246, 246, 246);
     margin: 0 auto;
     width: 500px;
@@ -91,25 +69,65 @@ body {
     margin-top: 150px;
     border: 3px solid rgb(191, 211, 213);
     box-shadow: 2px 2px #88888822;
-
+    flex-direction: column;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     padding: 0px 20px 0 20px;
+    flex: 1
 }
 
-.content div {
-    margin-bottom: 5px;
+.content>* {
+    margin-bottom: 10px;
 }
 
-.font-color-default {
+.content-title hr {
+    background-color: rgb(191, 211, 213);
+    height: 2px;
+    border: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(61, 157, 179), rgba(255, 255, 255, 0));
+}
+
+.content-bottom {
+    display: flex;
+    flex: 1;
+    background-color: rgb(225, 234, 235);
+    height: 70px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: center;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.txt-align-center {
+    text-align: center;
+}
+
+.color-default {
     color: rgb(61, 157, 179);
 }
 
-.radio {
-    box-shadow: 2px 2px #88888822;
-    background-color: silver;
+.bold {
+    font-weight: bolder;
+}
 
+.h-margin-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.v-margin-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.color-default {
+    color: rgb(61, 157, 179);
+}
+
+.w-stretch {
+    width: 100% !important;
 }
