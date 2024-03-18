@@ -1,29 +1,55 @@
-<html> 
-    <head>
-      <link rel="stylesheet" href="mystyle.css">
-    </head>
-    <body> 
-      <div class="div-pai"> 
-       <div id="div-title">
-       <H1>Login</h1> </div> <br>
-        <label class="label">Seu e-mail:</label> 
-        <input class="btns" type="text" placeholder="contato@htmlecsspro.com"> <br>
-        <label class="label">Sua senha:</label> 
-        <input class="btns"  type="password" placeholder="1234" > <br>
-        <input class="manter-me-logado" type="checkbox">
-        <label> Manter-me logado</label> <br>
-        <input class="btn-logar" type="button" value="Logar">
-        <div class="div-bottom">
-          
-          <label class="label-cadastre-se" >Ainda não tem conta?</label>
-          <input class="btn-cadastre-se" type="button" value="Cadastre-se">
+<html>
 
-        </div>
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+  <div class="div-pai">
+    <div class="content">
+      <div id="div-title">
+        <H1 class="font-color-default">Login</h1>
+        <hr size="">
+        </hr>
       </div>
-      
-     
-      
-       <footer>
-       </footer>
-    </body>
- </html>
+      <div style="width: 100%;">
+        <label class="font-color-default">E-mail:</label><br>
+        <input class="inputs" type="text" placeholder="contato@htmlecsspro.com">
+      </div>
+      <div style="width: 100%;">
+        <label class="font-color-default">Senha:</label><br>
+        <input class="inputs" type="password" placeholder="digite sua senha">
+      </div>
+      <div>
+        <input class="radio" type="checkbox">
+        <label class="font-color-default"> Manter-me logado</label>
+      </div>
+      <input id="btnLogar" class="btn-logar" type="button" value="Logar">
+    </div>
+    <div style="width: 100%;">
+      <div class="div-bottom">
+        <a target="blank" href="https://www.google.com" class="label-cadastre-se font-color-default">Ainda não tem conta?</a>
+        <input class="btn-cadastre-se font-color-default" type="button" value="Cadastre-se">
+      </div>
+    </div>
+
+  </div>
+  <footer>
+  </footer>
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function () {
+    $("#btnLogar").click(function () {
+   
+    });
+  });
+
+  function logar() {
+    alert("cliquei via metodo");
+
+  }
+</script>

@@ -1,74 +1,115 @@
-html{
+html {
     background-color: rgb(238, 238, 238);
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
-.btns{
+
+.inputs {
     height: 30px;
-    width: 400px;
-    margin-left: 40px;
+    width: 100%;
     margin-top: 5px;
-    margin-bottom: 3px ;
+    margin-bottom: 3px;
+    padding-left: 10px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    box-shadow: 2px 2px #88888822;
 }
-.label{
-    margin-left: 40px;
+
+.inputs:focus {
+    border: 2px solid  rgb(61, 157, 179);
+    outline: none ;
 }
-.btn-logar{
-    margin-left: 40px;
-    width: 400px;
+
+.inputs::placeholder {
+   opacity:0.5;
+}
+
+.btn-logar {
+    width: 100%;
     height: 40px;
-    margin-top:10px ;
-    color: rgb(255,253,252);
-    background-color: rgb(61,157,179);
-    font-size: 20px;
-    border-radius: 3px;
-    border: solid rgb(61,157,179);
-}
-.manter-me-logado{
-    margin-left: 40px;
     margin-top: 10px;
+    color: rgb(255, 253, 252);
+    background-color: rgb(61, 157, 179);
+    font-size: 20px;
+    border-radius: 5px;
+    border: solid rgb(61, 157, 179);
+}
+
+.btn-cadastre-se {
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgb(220, 227, 117);
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+.label-cadastre-se {
+    margin-right: 20px;
+}
+
+.div-bottom {
+    display: flex;
+    background-color: rgb(225, 234, 235);
+    width: 100%;
+    margin-top: 20px;
+    height: 62px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+    justify-content: end;
+}
+
+#div-title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#div-title hr {
+    width: 100%;
+    background-color: rgb(191, 211, 213);
+    height: 2px;
+    border: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(61, 157, 179), rgba(255, 255, 255, 0));
+
+}
+
+#div-title h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.div-pai {
+    background-color: rgb(246, 246, 246);
+    margin: 0 auto;
+    width: 500px;
+    height: 390px;
+    border-radius: 10px;
+    margin-top: 150px;
+    border: 3px solid rgb(191, 211, 213);
+    box-shadow: 2px 2px #88888822;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0 20px;
+}
+
+.content div {
     margin-bottom: 5px;
 }
-.btn-cadastre-se{
-    border-radius: 3px;
-    border: 1px solid rgb(220,227,117);
-    
-    color: rgb(12,185,200);
-    
+
+.font-color-default {
+    color: rgb(61, 157, 179);
 }
-.label-cadastre-se{
-    margin-left: 250px;
-    padding: 5px;
-    color: rgb(148,147,147);
-}
-.div-bottom{
-    bottom: 0; 
-    background-color: rgb(225, 234,235);
-    width: 500px;
-    height: 57px;
-    margin-top: 30px;
-}
-#div-title{
-    background-color: rgb(246, 246, 246);
-    margin-top:40px;
-    margin-left: 50px;
-    margin-right: 50px; 
-    border-bottom:3px solid rgb(191,211,213);
-}
-#div-title h1{
-    color: rgb(4,105,116); 
-    margin-left: 150px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-}
-.div-pai{
-    background-color: rgb(246, 246, 246);
-    margin: 0 auto; 
-    width: 500px;
-    height: 400px;
-    border-radius:10px;
-    margin-top: 150px;
-    margin-bottom: 125;
-    border: 3px solid rgb(191, 211, 213);
+
+.radio {
+    box-shadow: 2px 2px #88888822;
+    background-color: silver;
+
 }
