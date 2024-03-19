@@ -153,7 +153,7 @@ input[type="checkbox"] {
 }
 
 .hover-shake:hover {   
-    animation: shake 0.5s;     
+    animation: shake 0.5s, led 0.5s;  
     animation-iteration-count: infinite;
   }  
 @keyframes shake {
@@ -168,4 +168,10 @@ input[type="checkbox"] {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @keyframes led {
+    0% {background-color: red;}
+    50% {background-color: green;}
+    100% {background-color: blue;}
   }
