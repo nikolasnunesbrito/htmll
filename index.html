@@ -5,34 +5,35 @@
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 
-
-
 <body>
-  <div class="container">
-    <div class="content">
-      <div class="content-title ">
-        <H1 class="color-default txt-align-center">Login</h1>
-        <hr>
-        </hr>
+  <div class="main-content">   
+    <div class="side-content"></div>   
+    <div class="container">
+      <div class="content">
+        <div class="content-title ">
+          <H1 class="color-default txt-align-center">Login</h1>
+          <hr>
+          </hr>
+        </div>
+        <div>
+          <label class="color-default">E-mail</label><br>
+          <input class="w-stretch" type="text" placeholder="nikas@nikas.com.br">
+        </div>
+        <div>
+          <label class="color-default">Senha</label><br>
+          <input class="w-stretch" type="password" placeholder="digite sua senha">
+        </div>
+        <div>
+          <input type="checkbox" name="checkbox" id="cbMenterLogado">
+          <label class="color-default" for="cbMenterLogado">Manter-me logado</label>
+        </div>
+        <input id="btnLogar" class="btn-default w-stretch hover-shake" type="button" value="Logar" onclick="logar()">
       </div>
-      <div>
-        <label class="color-default">E-mail</label><br>
-        <input class="w-stretch" type="text" placeholder="nikas@nikas.com.br">
+      <div class="content-bottom">
+        <a target="blank" href="https://www.google.com" class="color-default h-margin-10 bold">Ainda não tem conta?</a>
+        <input id="btnCadastreSe" class="btn-reverse bold hover-shake" type="button" value="Cadastre-se">
       </div>
-      <div>
-        <label class="color-default">Senha</label><br>
-        <input class="w-stretch" type="password" placeholder="digite sua senha">
-      </div>
-      <div>
-        <input type="checkbox" name="checkbox" id="cbMenterLogado">
-        <label class="color-default" for="cbMenterLogado">Manter-me logado</label>
-      </div>
-      <input id="btnLogar" class="btn-default w-stretch hover-shake" type="button" value="Logar" onclick="logar()">
-    </div>
-    <div class="content-bottom">
-      <a target="blank" href="https://www.google.com" class="color-default h-margin-10 bold">Ainda não tem conta?</a>
-      <input id="btnCadastreSe" class="btn-reverse bold hover-shake" type="button" value="Cadastre-se">
-    </div>
+    </div>    
   </div>
   <footer>
   </footer>
@@ -42,11 +43,8 @@
 
 <script>
   $(document).ready(function () {
-    $("#btnLogar").click(function () {
 
-    });
   });
 
-  function logar() {      
-  }
+
 </script>
